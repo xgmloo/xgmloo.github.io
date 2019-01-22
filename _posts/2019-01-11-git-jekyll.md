@@ -75,6 +75,9 @@ GitHub Pages为了提供对HTML内容的支持，选择了[Jekyll](https://jekyl
         git add .
         git commit -m "sth"
         git push origin master
+    `git add .` 监控工作区的状态树，将所有变化提交到缓存区，包括文件的修改和新文件。  
+    `git add -u` 监控已被add的文件，将修改文件提交的暂存区，包括文件的修改和删除。  
+    `git add -a` 是上边两个功能的合集。
 3. 等一会儿浏览器`example.github.io`浏览。
 # 推送文章
 在example.github.io文件夹中的_posts文件夹中添加`.md`文件，之后推送到GitHub上就行了。
