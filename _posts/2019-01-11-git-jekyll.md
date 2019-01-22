@@ -73,7 +73,7 @@ GitHub Pages为了提供对HTML内容的支持，选择了[Jekyll](https://jekyl
 
         git status
         git add .
-        git commit -C "sth"
+        git commit -m "sth"
         git push origin master
 3. 等一会儿浏览器`example.github.io`浏览。
 # 推送文章
