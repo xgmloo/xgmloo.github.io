@@ -85,8 +85,11 @@ GitHub Pages为了提供对HTML内容的支持，选择了[Jekyll](https://jekyl
 ## 部署Jekyll模板
 
 1. 从远程库克隆：
-    + 在GitHub上`username.github.io`项目页点“Clone or download”，复制SSH链接，形如`git@github.com:example/example.github.io.git`。
-    + 在想要放个人博客项目的文件夹内右键“Git Bash”，输入`git clone git@github.com:example/example.github.io.git`
+    + 在GitHub上`username.github.io`项目页点“Clone or download”，复制SSH链接，形如`git@github.com:example/example.github.io.git`
+    + 在想要放个人博客项目的文件夹内右键“Git Bash”，输入
+    
+            git clone git@github.com:example/example.github.io.git
+
 2. 将Jekyll模板推送到GitHub:   
 将myblog文件夹里的内容复制到example.github.io文件夹中，在后者文件夹中右键“Git Bash”，输入
 
@@ -94,6 +97,7 @@ GitHub Pages为了提供对HTML内容的支持，选择了[Jekyll](https://jekyl
         git add .
         git commit -m "sth"
         git push origin master
+        
     `git add .` 监控工作区的状态树，将所有变化提交到缓存区，包括文件的修改和新文件。  
     `git add -u` 监控已被add的文件，将修改文件提交的暂存区，包括文件的修改和删除。  
     `git add -a` 是上边两个功能的合集。
