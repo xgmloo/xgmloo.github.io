@@ -14,11 +14,11 @@ categories: git jekyll
 注册GitHub账号。由于本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，所以还需要一点设置：  
 1. 创建SSH Key。
 
-        ssh-keygen -t rsa -C "youremail@example.com"
+        $ ssh-keygen -t rsa -C "youremail@example.com"
 
     一路回车，使用默认值即可。然后在C盘用户主目录下找到`.ssh`目录，里边有`id_rsa`和`id_rsa.pub`两个文件，这两个就是SSH Key的密钥对，`id_rsa`是私钥，不能泄露出去，`id_rsa.pub`是公钥，可以放心地告诉任何人。
 
-2. 登陆GitHub，在右上角个人头像处找到“Settings”->“SSH and GPG keys”，点击“New SSH key”,填上Title，在Key文本框里粘贴`id_rsa.pub`文件的内容，点击“Add Key”，就能看到已经添加的Key。  
+2. 登陆GitHub，在右上角个人头像处找到“Settings”->“SSH and GPG keys”，点击“New SSH key”,填上Title（随意写），在Key文本框里粘贴`id_rsa.pub`文件的内容，点击“Add Key”，就能看到已经添加的Key。  
 然后可以测试一下ssh（`git@github.com`不要修改)：
 
     $ ssh -T git@github.com
