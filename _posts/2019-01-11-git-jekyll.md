@@ -7,7 +7,7 @@ categories: git jekyll
 ## 安装Git
 参考[廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)，  
 下载安装[Git](https://git-scm.com/downloads)，按默认选项安装。之后打开“Git Bash”，在命令行输入：
-    
+
     $ git config --global user.name "Your name"
     $ git config --global user.email "email@example.com"
 
@@ -21,7 +21,7 @@ categories: git jekyll
 2. 登陆GitHub，在右上角个人头像处找到“Settings”->“SSH and GPG keys”，点击“New SSH key”,填上Title（随意写），在Key文本框里粘贴`id_rsa.pub`文件的内容，点击“Add Key”，就能看到已经添加的Key。  
 然后可以测试一下ssh（`git@github.com`不要修改)：
 
-    $ ssh -T git@github.com
+        $ ssh -T git@github.com
 
     后边会有一个（yes/no）选项，输入yes回车就好，之后就会看到一个包括sucessfully的回应。
 
@@ -87,7 +87,7 @@ GitHub Pages为了提供对HTML内容的支持，选择了[Jekyll](https://jekyl
 1. 从远程库克隆：
     + 在GitHub上`username.github.io`项目页点“Clone or download”，复制SSH链接，形如`git@github.com:example/example.github.io.git`
     + 在想要放个人博客项目的文件夹内右键“Git Bash”，输入
-    
+
             git clone git@github.com:example/example.github.io.git
 
 2. 将Jekyll模板推送到GitHub:   
@@ -97,7 +97,7 @@ GitHub Pages为了提供对HTML内容的支持，选择了[Jekyll](https://jekyl
         git add .
         git commit -m "sth"
         git push origin master
-        
+
     `git add .` 监控工作区的状态树，将所有变化提交到缓存区，包括文件的修改和新文件。  
     `git add -u` 监控已被add的文件，将修改文件提交的暂存区，包括文件的修改和删除。  
     `git add -a` 是上边两个功能的合集。
