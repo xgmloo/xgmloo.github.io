@@ -40,11 +40,7 @@ categories: git jekyll
 
         ping github.io
 
-    剩余的就默认就可以。（这个记录值，也就是地址，会有变动，[这里](https://help.github.com/articles/troubleshooting-custom-domains/)查看，我的A记录绑定的地址为185.199.109.153，但是我现在输入上边的命令出来的地址为185.199.110.153，但是域名访问没有问题，应该是因为GitHub总共提供了四个地址：
-    + 185.199.108.153
-    + 185.199.109.153
-    + 185.199.110.153
-    + 185.199.111.153）
+    剩余的就默认就可以。（这个记录值，也就是地址，会有变动，[这里](https://help.github.com/articles/troubleshooting-custom-domains/)查看，我的A记录绑定的地址为185.199.109.153，但是我现在输入上边的命令出来的地址为185.199.110.153，但是域名访问没有问题，应该是因为GitHub总共提供了四个地址：185.199.108.153，185.199.109.153，185.199.110.153，185.199.111.153）
 3. 在域名注册商处修改DNS服务：去[Godaddy](https://sg.godaddy.com/zh)修改域名服务器为自定义服务器，然后添加域名服务器地址：`f1g1ns1.dnspod.net`和`f1g1ns2.dnspod.net`。（这一步在[DNSPod](https://www.dnspod.cn/)应该会有提示）
 4. 等待域名解析生效。
 
