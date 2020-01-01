@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "使用Github Pages建立本博客"
-date:   2020-01-1
+date:   2020-01-01
 categories: git jekyll
 ---
 ## 安装Git
